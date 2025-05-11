@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Poppins', 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #121215, #783636);
+            background: linear-gradient(135deg, #121215, rgb(99, 33, 37));
             color: #e0e0e0;
             min-height: 100vh;
             display: flex;
@@ -97,7 +97,7 @@
         }
 
         .info-box:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgb(255, 255, 255);
             transform: scale(1.02);
         }
 
@@ -121,7 +121,7 @@
             position: fixed;
             top: 20px;
             left: 20px;
-            background: rgba(234, 49, 49, 0.2);
+            background: rgb(88, 101, 242);
             border-radius: 8px;
             padding: 10px;
             font-size: 0.9em;
@@ -224,7 +224,7 @@
         }
 
         draw() {
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+            ctx.fillStyle = 'rgba(255,255,255,0.55)';
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
             ctx.fill();
@@ -313,12 +313,12 @@
                 datasets: [{
                     label: 'Mitgliederzahl',
                     data,
-                    borderColor: 'rgba(143,143,143,0.64)',
-                    backgroundColor: 'rgba(213,213,213,0.2)',
+                    borderColor: 'rgb(88,101,242)',
+                    backgroundColor: 'rgba(88,101,242,0.17)',
                     fill: true,
                     tension: 0.4,
-                    pointBackgroundColor: '#fff',
-                    pointBorderColor: 'rgba(143,143,143,0.64)'
+                    pointBackgroundColor: '#5865f2',
+                    pointBorderColor: 'rgb(88,101,242)'
                 }]
             },
             options: {
